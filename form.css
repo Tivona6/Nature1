@@ -1,0 +1,97 @@
+  body{
+    margin: 0;
+    
+}
+#wrapper {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    background: rgb(5,32,32);
+    background:linear-gradient(rgba(5, 32, 32, 0.4),rgba(5, 32, 32, 0.5));
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+  }
+  #curved img{
+    width: 110%;
+    text-align: center;
+    
+    padding-bottom: 4px;
+    border-radius: 0px 0px 60px 60px;
+    position: relative;
+    margin-left: -5%;    
+    box-shadow: 10px 10px 0px 0px rgb(0, 100, 53);
+    animation: curvedshadow 4s ease infinite;
+  }
+  @keyframes curvedshadow {
+    0% {
+      box-shadow: 10px 10px 0px 0px #ed7a07;
+    }
+    50% {
+      box-shadow: -10px 10px 0px 0px maroon;
+    }
+    
+  }
+  h1 {
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+  margin-top: 10%;
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  form {
+    width: 75%;
+    margin: 0 auto;
+    padding: 25px 0px 25px;
+  }
+  input {
+    margin-top: 30px;
+  }
+  input[type='text'], input[type='password'] {
+    width: 92%;
+    border: none;
+    background: #FFF8F0;
+    padding: 8px;
+    outline: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #FF8811;
+    font-size: 16px;
+    
+  }
+button {
+    border: none;
+ background-color:  rgb(0, 100, 53) ;
+ padding:8px;
+ font-size: 16px;
+ font-family: sans-serif;
+ color: white;
+ margin-top: 25px;
+ border-radius: 3px;
+  }
+  button:hover{
+    border: 2px solid #981D16;
+    background-color: #FFFCC8;
+    color: #981D16;
+   } 
+  .form-field {
+    position: relative;
+  }
+  label {
+    position: absolute;
+    left: 10px;
+    top: 38px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #FF8811;
+  }
+  input:hover + label,  input:focus + label, input:valid + label {
+    top: 13px;
+    font-size: 14px;
+    color: #FFF8F0;
+  }
